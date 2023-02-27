@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Http\Requests\StorePost;
 use App\Models\Post;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -8,7 +10,7 @@ use Illuminate\Http\Response;
 
 class PostController extends Controller
 {
-     /**
+    /**
         * Display a listing of the resource.
         *
         * @return Response
@@ -18,27 +20,7 @@ class PostController extends Controller
            return view('PostView.index', 
            ['posts' => Post::all()]);
         }
-    
-        /**
-            * Show the form for creating a new resource.
-            *
-            * @return Response
-            */
-        public function create()
-        {
-            //
-        }
-    
-        /**
-            * Store a newly created resource in storage.
-            *
-            * @return Response
-            */
-        public function store()
-        {
-            //
-        }
-    
+       
         /**
             * Display the specified resource.
             *
