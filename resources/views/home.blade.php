@@ -26,6 +26,7 @@
                                             @csrf
 
             </form>
+           
         </nav>
         
      @yield('content')

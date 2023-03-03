@@ -9,6 +9,14 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Post extends Model
 {
     use HasFactory;
+
+    /**
+     * Get the Catigories for the blog post.
+     */
+    public function catigorie()
+    {
+        return $this->belongsTo(Catigorie::class);
+    }
     /**
      * Get the comments for the blog post.
      */

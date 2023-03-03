@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategorieController;
 use App\Http\Controllers\EditPost;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
@@ -31,6 +32,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource("/home", PostController::class)->only('index','show');
+// Route::resource("/home", CategorieController::class)->only('index','show');
 
 Route::resource('/edit', EditPost::class);
 require __DIR__.'/auth.php';

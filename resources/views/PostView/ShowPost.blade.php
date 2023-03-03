@@ -5,5 +5,5 @@
     
             <p>{{ $post->content }}</p>
             <em> {{ $post->created_at }}</em>
-    
+            
 @endsection
